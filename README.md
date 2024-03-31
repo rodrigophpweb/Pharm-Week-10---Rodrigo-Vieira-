@@ -16,13 +16,13 @@ Para construir e executar a aplicação, siga estas etapas:
 1. Clone este repositório:
 
     ```
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone git@github.com:rodrigophpweb/Pharm-Week-10---Rodrigo-Vieira-.git
     ```
 
 2. Navegue até o diretório clonado:
 
     ```
-    cd nome-do-repositorio
+    cd Pharm-Week-10---Rodrigo-Vieira-
     ```
 
 3. Execute o Docker Compose para construir e iniciar os contêineres:
