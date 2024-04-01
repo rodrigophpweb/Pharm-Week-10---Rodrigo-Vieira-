@@ -1,3 +1,27 @@
+# Arquivo docker-compose.yml para a aplicação Farmácia
+#
+# Este arquivo docker-compose é usado para orquestrar os serviços necessários para a aplicação Farmácia, incluindo um serviço MySQL e um serviço de API da Farmácia.
+#
+# Versão do Compose:
+#
+# Este arquivo usa a versão 3.9 do Compose.
+#
+# Serviços:
+#
+# - mysql: serviço para o banco de dados MySQL. Usa a imagem mysql:latest e expõe a porta 3307 do host para a porta 3306 do contêiner MySQL.
+#
+# - farmacia_api: serviço para a API da Farmácia. Usa a imagem rodrigophpweb/app-farma:1.0 e expõe a porta 8081 do host para a porta 8080 do contêiner da API.
+#                Dependente do serviço mysql e configura as variáveis de ambiente para se comunicar com o banco de dados.
+#
+# Networks:
+#
+# - redeapi: define uma rede de bridge chamada 'redeapi', que os serviços usam para se comunicar entre si.
+#
+# Volumes:
+#
+# - volume-db-farmacia: volume usado pelo serviço MySQL para persistir os dados do banco de dados.
+#
+
 version: '3.9'
 
 services:
